@@ -65,3 +65,8 @@ k create -f ../kubernetes/yaml/kubia.yaml
 
 kubectl get pods
 ```
+
+### env
+```shell
+k exec kubia-8645997497-jbr8k env
+```
