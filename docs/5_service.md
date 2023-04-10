@@ -31,7 +31,7 @@ kubectl create -f ../kubernetes/yaml/kubia-svc.yaml
 ```
 
 ```shell
-k exec kubia-79c9c687db-g4l6s -- curl -s http://10.98.173.144
+k exec kubia-8645997497-jbr8k -- curl -s http://10.97.100.129
 ```
 
 ### sessionAffinity: ClientIP

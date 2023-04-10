@@ -52,8 +52,10 @@ k delete po -l creation_method=manual
 k delete po -l rel=canary
 ```
 ```shell
+k delete po --all
+```
+```shell
 k delete ns custom-namespace
-k delete po --all # don't delete ReplicationController
 k delete all --all
 ```
 
