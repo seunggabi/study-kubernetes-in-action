@@ -61,7 +61,7 @@ k delete all --all
 
 ### create
 ```shell
-k create -f ../kubernetes/yaml/kubia.yaml
+k create -f ../k8s/yaml/kubia.yaml
 
 kubectl get pods
 ```

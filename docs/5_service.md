@@ -27,7 +27,7 @@ kubia        ClusterIP   10.98.173.144   <none>        80/TCP    14s
 ```
 
 ```shell
-kubectl create -f ../kubernetes/yaml/kubia-svc.yaml
+kubectl create -f ../k8s/yaml/kubia-svc.yaml
 ```
 
 ```shell
@@ -159,7 +159,7 @@ kubia   172.17.0.12:8443,172.17.0.13:8443,172.17.0.4:8443 + 7 more...   131m
 ```
 
 ```shell
-cd ../kubernetes/yaml
+cd ../k8s/yaml
 
 k create -f external-service.yaml
 k create -f external-service-endpoints.yaml
