@@ -29,7 +29,3 @@ kubia        ClusterIP   10.98.173.144   <none>        80/TCP    14s
 ```shell
 kubectl create -f ../kubernetes/yaml/kubia-svc.yaml
 ```
-
-```shell
-kubectl get pods
-```

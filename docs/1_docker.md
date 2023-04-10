@@ -9,8 +9,13 @@ brew install node
 node app.js
 ```
 ```shell
+cd ../docker/nodejs
 docker build -t kubia .
+```
+```shell
 docker images
+```
+```
 REPOSITORY               TAG             IMAGE ID       CREATED         SIZE
 kubia                    latest          8d8e6ab95d50   5 minutes ago   660MB
 

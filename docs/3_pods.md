@@ -46,7 +46,7 @@ alias kcd='k config set-context $(k config current-context) --namespace '
 ```
 
 ### delete
-```
+```shell
 k delete po kubia-gpu
 k delete po -l creation_method=manual
 k delete po -l rel=canary
@@ -54,4 +54,11 @@ k delete po -l rel=canary
 k delete ns custom-namespace
 k delete po --all # don't delete ReplicationController
 k delete all --all
+```
+
+### create
+```shell
+k create -f ../kubernetes/yaml/kubia.yaml
+
+kubectl get pods
 ```
