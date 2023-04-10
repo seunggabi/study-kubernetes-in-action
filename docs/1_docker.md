@@ -45,8 +45,12 @@ seunggab.kim     69074   0.0  0.0 408628368   1616 s003  S+    2:42PM   0:00.00 
 ```shell
 docker stop kubia-container
 docker rm kubia-container
+```
 
-docker tag kubia seunggab/kubia
-docker push seunggab/kubia
+```shell
+docker tag kubia t1100412/kubia
+docker push t1100412/kubia
+```
+```shell
 docker run --name kubia-container -p 8080:8080 -d seunggab/kubia
 ```

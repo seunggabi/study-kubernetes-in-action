@@ -29,3 +29,14 @@ kubia        ClusterIP   10.98.173.144   <none>        80/TCP    14s
 ```shell
 kubectl create -f ../kubernetes/yaml/kubia-svc.yaml
 ```
+
+```shell
+k exec kubia-79c9c687db-g4l6s -- curl -s http://10.98.173.144
+```
+
+### sessionAffinity: ClientIP
+- same client -> same redirect
+```
+spec:
+  sessionAffinity: ClientIP
+``` 

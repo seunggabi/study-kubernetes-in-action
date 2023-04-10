@@ -50,7 +50,8 @@ alias kcd='k config set-context $(k config current-context) --namespace '
 k delete po kubia-gpu
 k delete po -l creation_method=manual
 k delete po -l rel=canary
-
+```
+```shell
 k delete ns custom-namespace
 k delete po --all # don't delete ReplicationController
 k delete all --all
