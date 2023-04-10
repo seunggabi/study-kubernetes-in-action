@@ -1,4 +1,4 @@
-### Service
+## Service
 - service > pod
 - label selector
 ```yaml
@@ -164,4 +164,27 @@ cd ../kubernetes/yaml
 k create -f external-service.yaml
 k create -f external-service-endpoints.yaml
 k create -f external-service-externalname.yaml
+```
+
+### node port
+```shell
+k create -f kubia-svc-nodeport.yaml 
+
+k get svc kubia-nodeport
+```
+
+### load balancer
+```shell
+k create -f kubia-svc-loadbalancer.yaml 
+
+k get svc kubia-loadbalancer
+```
+
+### minikube ingress
+```shell
+minikube addons list
+
+minikube addons enable ingress
+
+k get po --all-namespaces
 ```
