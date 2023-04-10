@@ -165,7 +165,7 @@ spec:
 ### shell
 - https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel
 ```shell
-kubectl apply -f kubia.yaml
+kubectl apply -f ../k8s/kubia.yaml
 kubectl expose deployment kubia --type=LoadBalancer --port 8080 --name kubia-http
 
 minikube tunnel &
