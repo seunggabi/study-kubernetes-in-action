@@ -20,3 +20,6 @@ spec:
 kubectl get svc
 ```
 
+```shell
+kubectl create -f ../kubernetes/yaml/kubia-svc.yaml
+```
