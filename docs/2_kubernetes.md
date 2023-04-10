@@ -11,7 +11,7 @@ cluster > node > worker > pod > container
 
 ### alias
 - https://kubernetes.io/ko/docs/tasks/tools/included/optional-kubectl-configs-zsh/
-```bash
+```shell
 source <(kubectl completion zsh)
 
 echo 'alias k=kubectl' >>~/.zshrc
@@ -23,7 +23,7 @@ echo 'compdef __start_kubectl k' >>~/.zshrc
 ```
 
 ### start
-```bash
+```shell
 brew install minikube
 minikube start
 kubectl cluster-info
@@ -32,12 +32,12 @@ kubectl cluster-info
 Kubernetes control plane is running at https://127.0.0.1:59122
 CoreDNS is running at https://127.0.0.1:59122/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 ```
-```bash
+```shell
 ➜  nodejs git:(main) ✗ kubectl get nodes
 NAME       STATUS   ROLES                  AGE     VERSION
 minikube   Ready    control-plane,master   2m13s   v1.23.3
 ```
-```bash
+```shell
 kubectl describe node minikube
 Name:               minikube
 Roles:              control-plane,master
@@ -164,7 +164,7 @@ spec:
 
 ### shell
 - https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel
-```bash
+```shell
 kubectl apply -f kubia.yaml
 kubectl expose deployment kubia --type=LoadBalancer --port 8080 --name kubia-http
 
@@ -199,7 +199,7 @@ spec:
           - containerPort: 8080
 ```
 2. re-apply
-```bash
+```shell
 kubectl apply -f kubia.yaml
 
 # as-is

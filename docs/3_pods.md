@@ -1,5 +1,5 @@
 ### yaml
-```
+```shell
 k create -f kubia-manual.yaml #file
 
 k get po kubia-manual -o yaml #out
@@ -15,7 +15,7 @@ curl localhost:8888
 ```
 
 ### labels
-```
+```shell
 k create -f kubia-manual-with-labels.yaml 
 k get po --show-labels
 
@@ -32,7 +32,7 @@ k get po -l '!env'
 ```
 
 ### namespace(ns)
-```
+```shell
 k get ns
 k get po -namespace kube-system
 k get po -n kube-system

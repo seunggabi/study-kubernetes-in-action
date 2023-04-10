@@ -4,11 +4,11 @@
 - https://hub.docker.com/u/seunggab
 
 ### start
-```bash
+```shell
 brew install node
 node app.js
 ```
-```bash
+```shell
 docker build -t kubia .
 docker images
 REPOSITORY               TAG             IMAGE ID       CREATED         SIZE
@@ -22,7 +22,7 @@ echo $DOCKER_HOST
 docker ps
 docker inspect kubia-container
 ```
-```bash
+```shell
 docker exec -it kubia-container bash
 
 root@7e9d3c774880:/# ps aux
@@ -37,7 +37,7 @@ root        27  3.0  0.1 159484  8504 pts/0    Sl+  05:41   0:00 /usr/bin/qemu-x
 ➜  ~ ps aux | grep app.js
 seunggab.kim     69074   0.0  0.0 408628368   1616 s003  S+    2:42PM   0:00.00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox app.js
 ```
-```bash
+```shell
 docker stop kubia-container
 docker rm kubia-container
 
